@@ -28,9 +28,30 @@ const createGalleryItem = images.map(image => {
       <img src="${image.url}" alt="${image.alt}" class="gallery-item">
     </li>
   `;
+ 
 }).join("");
+galleryList.classList.add('gallery');
 
  galleryList.insertAdjacentHTML("beforeend", createGalleryItem);
+
+
+// .gallery {
+//   display: flex;
+//   list-style: none;
+//   padding: 0;
+// }
+
+// .gallery-item {
+//   margin-right: 10px; /* Відступ між зображеннями */
+// }
+
+// .gallery-image {
+//   max-width: 100%; /* Зображення не буде виходити за межі контейнера */
+//   height: auto; /* Автоматична висота для збереження пропорцій */
+// }
+
+
+
 
 // const itemImg = document.querySelector(".gallery");
 
