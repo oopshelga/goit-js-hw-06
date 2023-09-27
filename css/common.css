@@ -31,5 +31,11 @@ display: grid;
   list-style: none;
   padding: 0;
 }
+.valid {
+  border-color: #4caf50;
+}
 
+.invalid {
+  border-color: #f44336;
+}
 
