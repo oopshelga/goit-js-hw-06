@@ -28,7 +28,7 @@ const validationInput = document.querySelector('#validation-input');
 
 validationInput.addEventListener('blur', () => {
     const dataLength = Number(validationInput.dataset.length);
-    const inputValue = validationInput.trim();
+    const inputValue = validationInput.value.trim();
     
 if (inputValue.length === dataLength) {
     validationInput.classList.remove('invalid');
